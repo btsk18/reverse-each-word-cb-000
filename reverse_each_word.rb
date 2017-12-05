@@ -12,5 +12,5 @@ def reverse_each_word(sentence)
   sentence_array.collect!.with_index { |x, index|
     reversed_sentence += index == 0 ? "#{x.reverse}" : " #{x.reverse}"
   }
-  return reversed_sentence
+  return sentence_array
 end
