@@ -9,8 +9,8 @@ end
 
 def reverse_each_word(sentence)
   sentence_array = sentence.split
-  sentence_array.collect!.with_index { |x, index|
+  reversed_sentence = sentence_array.collect.with_index { |x, index|
     reversed_sentence += index == 0 ? "#{x.reverse}" : " #{x.reverse}"
   }
-  return sentence_array
+  return reversed_sentence
 end
